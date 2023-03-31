@@ -1,0 +1,63 @@
+{
+  "name": "@halo-dev/editor",
+  "private": false,
+  "version": "3.0.5",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:lib": "vite build --config vite.lib.config.js --watch",
+    "build:lib": "rimraf dist && vite build --config vite.lib.config.js",
+    "lint": "eslint --ext .js,vue --ignore-path .gitignore ."
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/lib/halo-editor.umd.js",
+  "module": "./dist/lib/halo-editor.es.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halo-dev/editor.git"
+  },
+  "author": "hinesboy",
+  "contributors": [
+    "ruibaby"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halo-dev/editor/issues"
+  },
+  "homepage": "https://github.com/halo-dev/editor#readme",
+  "dependencies": {
+    "@halo-dev/markdown-renderer": "^1.1.0",
+    "@susisu/mte-kernel": "^2.1.1",
+    "codemirror": "^5.65.6",
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.5.1",
+    "katex": "^0.12.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.flatten": "^4.4.0",
+    "lodash.last": "^3.0.0",
+    "lodash.times": "^4.3.2",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@iconify-icons/fa-solid": "^1.2.3",
+    "@iconify-json/fa": "^1.1.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.7.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "stylus": "^0.54.8",
+    "unplugin-icons": "^0.13.4",
+    "unplugin-vue-components": "^0.17.21",
+    "vite": "^2.9.13",
+    "vite-plugin-inspect": "^0.4.3",
+    "vite-plugin-vue2": "^1.9.3",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
