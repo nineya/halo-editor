@@ -1,4 +1,4 @@
-import { markdownIt as markdown } from '@halo-dev/markdown-renderer'
+import { markdownIt as markdown } from '@nineya/halo-markdown-renderer'
 
 import hljs from '../core/hljs'
 
