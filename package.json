@@ -2,6 +2,9 @@
   "name": "@nineya/halo-editor",
   "private": false,
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepare": "husky install",
     "dev": "vite --host",
