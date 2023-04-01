@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://github.com/halo-dev" target="_blank">halo-editor</a></h1>
+<h1 align="center"><a href="https://github.com/nineya" target="_blank">halo-editor</a></h1>
 
 > halo-editor 基于 [mavonEditor](https://github.com/hinesboy/mavonEditor) 开发，感谢 [hinesboy](https://github.com/hinesboy)。
 

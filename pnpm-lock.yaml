@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@halo-dev/markdown-renderer': ^1.1.0
   '@iconify-icons/fa-solid': ^1.2.3
   '@iconify-json/fa': ^1.1.2
+  '@nineya/halo-markdown-renderer': ^1.0.0
   '@susisu/mte-kernel': ^2.1.1
   codemirror: ^5.65.6
   eslint: ^7.32.0
@@ -30,7 +30,7 @@ specifiers:
   vue-template-compiler: ^2.6.14
 
 dependencies:
-  '@halo-dev/markdown-renderer': 1.1.0
+  '@nineya/halo-markdown-renderer': 1.0.0
   '@susisu/mte-kernel': 2.1.1
   codemirror: 5.65.6
   github-markdown-css: 5.1.0
@@ -447,30 +447,6 @@ packages:
       - supports-color
     dev: true
 
-  /@halo-dev/markdown-renderer/1.1.0:
-    resolution: {integrity: sha512-oPbdIhO+c7ImY9cgqpHwNpZ0ybSGHLEmOz71HASb2vpBxwfb9XNHj8Ofr/hr+sc1aSfHFU0A9xZ5Hz1vtJDHrw==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@iktakahiro/markdown-it-katex': 4.0.1
-      lodash.escape: 4.0.1
-      markdown-it: 12.3.2
-      markdown-it-abbr: 1.0.4
-      markdown-it-anchor: 8.6.4_markdown-it@12.3.2
-      markdown-it-attrs: 4.1.4_markdown-it@12.3.2
-      markdown-it-emoji: 2.0.2
-      markdown-it-footnote: 3.0.3
-      markdown-it-images-preview: 1.0.1
-      markdown-it-ins: 3.0.1
-      markdown-it-mark: 3.0.1
-      markdown-it-sub: 1.0.0
-      markdown-it-sup: 1.0.0
-      markdown-it-table-of-contents: 0.6.0
-      markdown-it-task-lists: 2.1.1
-      mermaid: 8.14.0
-    transitivePeerDependencies:
-      - '@types/markdown-it'
-    dev: false
-
   /@humanwhocodes/config-array/0.5.0:
     resolution: {integrity: sha512-FagtKFz74XrTl7y6HCzQpwDfXP0yhxe9lHLD1UZxjvZIcbyRz8zTFF/yYNfSfzU414eDwZ1SrO0Qvtyf+wFMQg==}
     engines: {node: '>=10.10.0'}
@@ -536,6 +512,30 @@ packages:
       '@jridgewell/resolve-uri': 3.0.5
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
+
+  /@nineya/halo-markdown-renderer/1.0.0:
+    resolution: {integrity: sha512-XkjUj4h1apHLWkhDnNCCfrQ4JiUGBSmSHCExjqoI9ugyuiL06yzeMl0Dh9xmHaRU1pRLBicDoYGkAYfDCJFa4Q==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@iktakahiro/markdown-it-katex': 4.0.1
+      lodash.escape: 4.0.1
+      markdown-it: 12.3.2
+      markdown-it-abbr: 1.0.4
+      markdown-it-anchor: 8.6.4_markdown-it@12.3.2
+      markdown-it-attrs: 4.1.4_markdown-it@12.3.2
+      markdown-it-emoji: 2.0.2
+      markdown-it-footnote: 3.0.3
+      markdown-it-images-preview: 1.0.1
+      markdown-it-ins: 3.0.1
+      markdown-it-mark: 3.0.1
+      markdown-it-sub: 1.0.0
+      markdown-it-sup: 1.0.0
+      markdown-it-table-of-contents: 0.6.0
+      markdown-it-task-lists: 2.1.1
+      mermaid: 8.14.0
+    transitivePeerDependencies:
+      - '@types/markdown-it'
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1011,7 +1011,7 @@ packages:
       lodash: ^4.17.20
       marko: ^3.14.4
       mote: ^0.2.0
-      mustache: ^4.0.1
+      mustache: ^3.0.0
       nunjucks: ^3.2.2
       plates: ~0.4.11
       pug: ^3.0.0
